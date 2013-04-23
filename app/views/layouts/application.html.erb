@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'samurai.ico' %>
+    <meta property="og:title" content="Happy Birthday David Manbeast Chau">
+    <meta property="og:image" content="http://s3.amazonaws.com/davidchau/quantum.png">
+    <meta property="og:url" content="<%= request.url %>">
+    <meta property="og:site_name" content="<%= @title %>">
+    <meta property="og:description" content="Diligent, Admirable, Victorious, Intelligent, Divine">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="footer">
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>

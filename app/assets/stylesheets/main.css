@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('background.png');
+    color: rgb(60, 60, 60);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 30px;
+    width: 960px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: rgb(48, 157, 207);
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  height: 0;
+  margin: 0;
+  line-height: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Neo Retro Draw;
+  src: url('/assets/neoretrodraw.ttf'),
+       url('/assets/neoretrodraw.eot');
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('/assets/sansation.ttf'),
+       url('/assets/sansation.eot');
+}
+
+@font-face {
+  font-family: Sansation Bold;
+  src: url('/assets/sansation_bold.ttf'),
+       url('/assets/sansation_bold.eot');
+}
+
+@font-face {
+  font-family: Existence;
+  src: url('/assets/existence.ttf'), 
+       url('/assets/existence.eot');
+}
